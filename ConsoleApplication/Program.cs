@@ -29,9 +29,6 @@ namespace ConsoleApplication
         
         static async Task Run()
         {
-            var rateServiceTest = new RateService();
-            rateServiceTest.GetRates("", "");
-
             IKernel ninjectKernel = new StandardKernel(new DependencyConfiguration());
 
             var bot = ninjectKernel.Get<Api>();
